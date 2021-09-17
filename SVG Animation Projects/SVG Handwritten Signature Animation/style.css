@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sign {
+  stroke-dasharray: 2014;
+  animation: moveSign 5s ease infinite;
+}
+
+@keyframes moveSign {
+  from {
+    /* default 0 */
+    stroke-dashoffset: 2014;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
